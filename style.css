@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background: rgb(40,40,40);
+    display: flex;
+    margin: 0;
+    padding: 0;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.merkez {
+    align-items: center;
+    /* justify-content: center; */
+    border-radius: 30px;
+    width: 360px;
+    /* width: 100%; */
+    height: 720px;
+    /* height: 100%; */
+    background: rgb(40,40,40);
+    background: radial-gradient(circle, rgb(51, 51, 51) 0%, rgb(14, 14, 14) 100%);
+}
+.yazi {
+    animation-duration: 10s;
+    animation-name: opacity;
+    animation-iteration-count: initial;
+    /* margin: 0 auto; */
+    margin-top: 20px;
+    margin-left: 20px;
+    /* text-align: left; */
+    color: #ededed;
+    font-size: 24px;
+    font-family: Gilroy;
+    
+}
+.yazi::before {
+    content: "GetYatt";
+}
+
+.lbar {
+    margin: 0 auto;
+    animation-duration: 5s;
+    animation-name: opc;
+    /* animation-iteration-count: infinite; */
+    margin-top: 20px;
+    height: 15px;
+    width: 230px;
+    border: 3px solid #ededed;
+    border-radius: 7px;
+    background-color: transparent;
+    opacity: 0%;
+}
+.ld {
+    margin-top: 2px;
+    animation-duration: 5s;
+    animation-name: slide;
+    animation-iteration-count: infinite;
+    height: 6px;
+    width: 110px;
+    background-color: #ededed;
+    border-radius: 7px;
+}
+.copy {
+    animation-duration: 10s;
+    animation-name: copy;
+    color: #ededed;
+    font-family: monospace;
+    font-size: 15px;
+    /* border: 1px solid seagreen; */
+    margin-top: 167.5%;
+    margin-left: 20px;
+    opacity: 80%;
+}
+.copyy {
+    color: #ededed;
+    font-family: monospace;
+    font-size: 15px;
+    /* border: 1px solid seagreen; */
+    margin-top: 15px;
+    margin-left: 20px;
+    /* padding-top: 100px; */
+    opacity: 80%;
+}
+.copy:before {
+    content: "0n1yR3D//Reyuvajo";
+}
+@keyframes slide {
+    from {
+        width: 1%;
+    }
+
+    50% {
+        width: 100%;
+        opacity: 100%;
+
+    }
+
+    to {
+        width: 100%;
+        opacity: 0%;
+    }
+    
+}
+
+@keyframes opacity {
+    from {
+        margin-top: 270px;
+        opacity: 100%;
+        margin-left: 65px;
+        font-size: 65px;
+    }
+
+    50% {
+        opacity: 50%;
+        margin-top: 270px;
+        margin-left: 65px;
+        font-size: 65px;
+    }
+
+    to {
+        opacity:100%;
+        margin-top: 20px;
+        font-size: 24px;
+        margin-left: 20px;
+        
+    }
+    
+}
+
+@keyframes opc {
+    from {
+        opacity: 100%;
+    }
+
+    50% {
+        opacity: 100%;
+    }
+    60% {
+        opacity: 0%;
+    }
+    to {
+        opacity: 0%;
+    }
+    
+}
+@keyframes copy {
+    0% {
+    margin-top: 85.5%;
+    }
+    50% {
+    margin-top: 85.5%;
+   } 
+    100% {
+    margin-top: 167.5%;
+   }
+}
+@font-face {
+    font-family: Gilroy;
+    src: url(Gilroy.otf);
+}
